@@ -1,0 +1,6 @@
+img { float: none !important }
+#content { max-width: none !important }
+
+#table-of-contents,
+#table-of-contents + ul,
+#sections > li:first-child { display: none }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Architect</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+    <script src="./documentup.min.js"></script>
+    <script>
+      DocumentUp.document({
+        repo: 'EtienneLem/commandz',
+        name: 'CommandZ',
+        google_analytics: 'UA-31026266-8',
+        twitter: 'EtienneLem',
+        theme: 'v1',
+        afterRender: function(data) {
+          var head = document.getElementsByTagName("head")[0];
+
+          var stylesheet = document.createElement("link");
+              stylesheet.rel = "stylesheet"; stylesheet.type = "text/css"; stylesheet.href = "./custom.css";
+
+          head.appendChild(stylesheet);
+        }
+      })
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <h1><img src="https://f.cloud.github.com/assets/436043/1047139/032acfc8-1059-11e3-8baa-d22caee7e517.png" style="max-width:100%;" alt="CommandZ"></h1>
+      <p>CommandZ undo and redo commands. Add commands history support to your web app.</p>
+      <p><a href="https://github.com/EtienneLem/commandz">https://github.com/EtienneLem/commandz</a></p>
+    </noscript>
+  </body>
+</html>
